@@ -26,7 +26,7 @@ european_countries <- c(
   "Ukraine", "United Kingdom", "Vatican City"
 )
 
-# Leser inn CSV-filen 
+# Leser CSV-filen 
 
 file_path <- NULL
 
@@ -78,7 +78,7 @@ cat("Filtrerte data - Antall rader:", nrow(data_europe), "\n")
 cat("Antall land inkludert:", length(unique(data_europe$country)), "\n")
 cat("Tidsperiode:", min(data_europe$year), "-", max(data_europe$year), "\n")
 
-# Opprett output-mappe
+# output-mappe
 if (!dir.exists("plots_europe")) {
   dir.create("plots_europe")
 }
